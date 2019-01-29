@@ -25,6 +25,7 @@ public class BOJ_2668 {
 		
 		
 		check = new int[N+1];
+		
 		for(int i =1;i<N+1;i++) {
 			
 			DFS(i);
