@@ -49,6 +49,8 @@ public class BOJ_2206 {
 
         boolean isSuccess = false;
         int step = 0;
+        
+        
         while (!queue.isEmpty() && !isSuccess) {
 
             step++;
@@ -96,9 +98,9 @@ public class BOJ_2206 {
 
         System.out.println(isSuccess ? step : -1);
     }
-}
 
-class Node {
+
+static class Node{
 
     int row;
     int col;
@@ -110,6 +112,8 @@ class Node {
         this.col = col;
         this.destroy = destroy;
     }
+}
+
 }
 
 
