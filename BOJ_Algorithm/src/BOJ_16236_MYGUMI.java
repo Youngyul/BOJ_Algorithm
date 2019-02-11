@@ -39,9 +39,10 @@ public class BOJ_16236_MYGUMI {
       visited = new boolean[400];
 
       q.add(new Item(targetX, targetY, 0));
-      visited[targetY * N + targetX] = true;
+      visited[targetY * N + targetX] = true;		//거리를 구하려는 걸까??
 
       int found = -1;
+      
       while (!q.isEmpty()) {
         Item item = q.poll();
         int r = item.n / N;
@@ -96,7 +97,8 @@ public class BOJ_16236_MYGUMI {
         }
       }
 
-    }
+    }		///전체 while문 
+    
     System.out.println(time);
   }
 
