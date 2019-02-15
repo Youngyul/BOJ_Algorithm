@@ -3,55 +3,38 @@ import java.io.*;
 
 public class SW_1204 {
 
+	static int arr [] = new int[101];
+	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		Scanner sc = new Scanner(System.in);
 		
-		String str [] = br.readLine().split(" ");
+		int testcase = sc.nextInt();
 		
-		int Testcase = Integer.parseInt(str[0]);
-		
-		
-		for(int i =0;i<Testcase;i++) {
-			str = br.readLine().split(" ");
-			int n = Integer.parseInt(str[0]);
-			
-			int arr [] = new int [1000];
-			int count[] = new int [101];
-			
-			str = br.readLine().split(" ");
-			
+		for(int i =1;i<=testcase;i++) {
+			int N = sc.nextInt();
+			arr = new int[101];
+	
 			for(int j =0;j<1000;j++) {
-				arr[j]=Integer.parseInt(str[j]);
-			}
-		
-			for(int j =0; j<1000;j++) {
-				int k = arr[j];
-				count[k]++;
+				int k = sc.nextInt();
+				arr[k]++;
 			}
 			
-			
-			
-			
-			int result = 0;
 			int max = 0;
 			
-			for(int k = 0; k<=100;k++) {
-				
-				if(count[k]>=max) {
-					result = k;
-					max = count[k];
-				}				
+			int result = 0;
+			
+			for(int j = 0;j<101;j++) {
+				if(arr[j]>max) {
+					max = arr[j];
+					result = j;
+				}
 			}
 			
-			
-			
-			
-			System.out.println("#"+ n + " "+result);
-			
-			
-		}// testcase end;
+			System.out.println("#"+N+" "+result);
+		}
+	
 		
 	}
 
