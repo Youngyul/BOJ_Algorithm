@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class BOJ_16236_MYGUMI {
+public class BOJ_16236_SAMSUNG_EX_EXAM {
   // http://mygumi.tistory.com/339
   static boolean[] visited = new boolean[400];
   static int[][] map = new int[20][20];
@@ -136,7 +136,7 @@ public class BOJ_16236_MYGUMI {
   public static void main(String[] args) {
     sc.init();
 
-    new BOJ_16236_MYGUMI().solve();
+    new BOJ_16236_SAMSUNG_EX_EXAM().solve();
   }
 
   static class sc {
